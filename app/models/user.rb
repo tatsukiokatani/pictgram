@@ -1,6 +1,5 @@
 class User < ApplicationRecord
   validates :name, presence: true
-  validates :email, presence: true
   
   has_secure_password
   VALID_PASSWORD_REGEX = /\A(?=.*?[a-z])[a-z\d]{8,32}+\z/
